@@ -200,7 +200,7 @@ public class RewardEliminationGame_B_Question implements RewardEliminationGame {
                 }
             return indice;
         }
-    //XAX
+    
 
     /*Uses a GameIterator to get the player at a specific index*/
     RENode getNodeAt(int index){
@@ -221,8 +221,7 @@ public class RewardEliminationGame_B_Question implements RewardEliminationGame {
                     it.index++;
             }
             return player;
-        }
-        //
+    }
 
     /*Returns the number of players in the game*/
     public int size() {
@@ -255,7 +254,7 @@ public class RewardEliminationGame_B_Question implements RewardEliminationGame {
 
         public boolean hasNext() {
             return current.next != null;
-        }// 2 marks
+        }
 
         public RENode next() {
            RENode e=current.next;
@@ -287,7 +286,7 @@ public class RewardEliminationGame_B_Question implements RewardEliminationGame {
                 (current.previous).next=player;
                 current.previous=player;
                 current=player;
-            //add your code here
+            
         }
         size++;
     }
@@ -297,12 +296,12 @@ public class RewardEliminationGame_B_Question implements RewardEliminationGame {
             (current.previous).next=current.next;
             current=current.next;
             size--;
-            //add your code here
+            
         }
 
         public boolean hasPrevious() {
             return current.previous != null;
-        }// 2 marks
+        }
 
         public RENode previous() {
             return current.previous;
