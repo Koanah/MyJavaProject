@@ -1,0 +1,2 @@
+# MyJavaProject
+Reward elimination game
